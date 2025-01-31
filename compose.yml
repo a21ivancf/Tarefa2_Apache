@@ -5,6 +5,7 @@ services:
       - 80:80
     volumes:
       - ./apache/tarefa1.conf:/etc/apache2/sites-enabled/test1.conf
+      - ./apache/omeusitio.conf:/etc/apache2/sites-enabled/test2.conf
       - ./ivan.lan:/opt/web/ivan.lan
       - ./omeusitio.lan:/opt/web/omeusitio.lan
 
