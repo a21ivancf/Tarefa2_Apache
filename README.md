@@ -6,7 +6,27 @@ A configuración do host virtual é a seguinte:
 
 1. O directorio raíz de documentos debe ser /opt/web/omeusitio.lan/htdocs, e debe permitir o uso de ficheiros .htaccess relacionados coa autenticación e información de ficheiros. Tamén queremos habilitar a opción para amosar un listado do contido do directorio no caso de se introduza un directorio na URL e que non exista ningún dos ficheiros especificados como de procura nese caso. Indica cal é a configuración do sitio virtual e explícaa detalladamente.
 
+    !["imaxen"](./images/ej1/ej1.1.png)
+
+    !["imaxen"](./images/ej1/ej1.2.png)
+
 2. No directorio imaxes, queremos permitir so que se descarguen os ficheiros con extensións .jpg, jpeg, bmp, gif, png e tiff. Todos os demais deberían esta bloqueados.  Explica o resultado obtido unha vez accedido cun navegador web á URL http://www.omeusitio.lan/imaxes tendo en conta o contido do directorio imaxes. Comproba se se pode acceder explicitamente ao ficheiro .pdf que hai dentro dese directorio.
+
+    !["imaxen"](./images/ej2/ej2.1.png)
+
+    !["imaxen"](./images/ej2/ej2.2.png)
+
+    !["imaxen"](./images/ej2/ej2.3.png)
+
+    !["imaxen"](./images/ej2/ej2.4.png)
+
+    !["imaxen"](./images/ej2/ej2.5.png)
+
+    !["imaxen"](./images/ej2/ej2.6.png)
+
+    !["imaxen"](./images/ej2/ej2.7.png)
+
+    !["imaxen"](./images/ej2/ej2.8.png)
 
 3. No directorio datos queremos bloquearlle o acceso aos clientes que teñan enderezo na rede 192.168.58.128/25 mediante ficheiros .htaccess. Indica o contido dese ficheiro, e tamén comproba con un cliente dentro desa subrede e outro fora se se pode acceder ou non a ese directorio.
 

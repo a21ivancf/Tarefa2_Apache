@@ -16,6 +16,8 @@ services:
           - ivan.lan
           - eq1.ivan.lan
           - www.omeusitio.lan
+          - omeusitio.lan
+        ipv4_address: 192.168.58.130
     develop:
       watch:
         - path: ./apache/test1.conf
@@ -25,7 +27,8 @@ services:
     image: brunosct/debian12-cliente-firefox
     hostname: cliente
     networks:
-      - redeapache
+      redeapache:
+        ipv4_address: 192.168.58.131
     environment:
       - DISPLAY=${DISPLAY}
     volumes:
@@ -33,3 +36,6 @@ services:
 
 networks:
   redeapache:
+    ipam:
+      config:
+        - subnet: 192.168.58.128/25
