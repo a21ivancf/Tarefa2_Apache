@@ -17,7 +17,7 @@ services:
           - eq1.ivan.lan
           - www.omeusitio.lan
           - omeusitio.lan
-        ipv4_address: 192.168.58.130
+        ipv4_address: 192.168.58.10
     develop:
       watch:
         - path: ./apache/test1.conf
@@ -28,7 +28,7 @@ services:
     hostname: cliente
     networks:
       redeapache:
-        ipv4_address: 192.168.58.131
+        ipv4_address: 192.168.58.20
     environment:
       - DISPLAY=${DISPLAY}
     volumes:
@@ -38,4 +38,5 @@ networks:
   redeapache:
     ipam:
       config:
-        - subnet: 192.168.58.128/25
+        - subnet: 192.168.58.0/25
+        

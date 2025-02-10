@@ -30,7 +30,31 @@ A configuración do host virtual é a seguinte:
 
 3. No directorio datos queremos bloquearlle o acceso aos clientes que teñan enderezo na rede 192.168.58.128/25 mediante ficheiros .htaccess. Indica o contido dese ficheiro, e tamén comproba con un cliente dentro desa subrede e outro fora se se pode acceder ou non a ese directorio.
 
+    !["imaxen"](./images/ej3/ej3.1.png)
+
+    !["imaxen"](./images/ej3/ej3.2.png)
+
+    !["imaxen"](./images/ej3/ej3.3.png)
+
+    !["imaxen"](./images/ej3/ej3.4.png)
+
+    !["imaxen"](./images/ej3/ej3.5.png)
+
 4. No directorio traballadores, queremos habilitar a autenticación Basic, e para elo crearemos os usuarios ana e eva. Gardaremos a lista de usuarios nun ficheiro en /opt/web/omeusitio.lan/ que debería ter un nome que impida ser accedido accidentalmente. Amosa a configuración, a ventá de acceso no navegador e a liña do log onde se ve o nome do usuario que fixo login.
+
+    !["imaxen"](./images/ej4/ej4_1.png)
+
+    !["imaxen"](./images/ej4/ej4_2.png)
+
+    !["imaxen"](./images/ej4/ej4_3.png)
+
+    !["imaxen"](./images/ej4/ej4_4.png)
+
+    !["imaxen"](./images/ej4/ej4_5.png)
+
+    !["imaxen"](./images/ej4/ej4_6.png)
+
+    !["imaxen"](./images/ej4/ej4_7.png)
 
 5. No directorio directivos, queremos habilitar a autenticación Digest, e para elo crearemos os usuarios xan e lois. Gardaremos a lista de usuarios nun ficheiro en /opt/web/omeusitio.lan/ que debería ter un nome que impida ser accedido accidentalmente. Escolleremos como nome de dominio (realm) “directivos”. Amosa a configuración, a ventá de acceso no navegador e a liña do log onde se ve o nome do usuario que fixo login.
 
