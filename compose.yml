@@ -10,6 +10,14 @@ services:
       - ./omeusitio.lan:/opt/web/omeusitio.lan
 
     networks:
+      redecliente:
+        aliases:
+            - www.ivan.lan
+            - ivan.lan
+            - eq1.ivan.lan
+            - www.omeusitio.lan
+            - omeusitio.lan
+        ipv4_address: 172.16.0.200
       redeapache:
         aliases:
           - www.ivan.lan
@@ -34,9 +42,24 @@ services:
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
 
+  cliente2:
+    image: brunosct/debian12-cliente-firefox
+    hostname: cliente2
+    networks:
+      redecliente:
+        ipv4_address: 172.16.0.20
+    environment:
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+
 networks:
   redeapache:
     ipam:
       config:
         - subnet: 192.168.58.0/25
+  redecliente:
+    ipam:
+      config:
+        - subnet: 172.16.0.0/16
         

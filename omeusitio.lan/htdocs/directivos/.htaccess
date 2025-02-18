@@ -1,0 +1,5 @@
+AuthType Digest
+AuthName directivos
+AuthDigestProvider file
+AuthUserFile "/usr/local/apache/passwd/passwords"
+Require user lois xan

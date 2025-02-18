@@ -1,0 +1,9 @@
+<RequireAll>
+
+    Require all granted
+    
+    Require not ip 172.16
+
+    Require not host apache.lan
+
+</RequireAll>

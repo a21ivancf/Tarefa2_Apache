@@ -1,0 +1,6 @@
+AuthType Basic
+AuthName "By Invitation Only"
+AuthBasicProvider file
+AuthUserFile "/usr/local/apache/passwd/passwords"
+AuthGroupFile "/usr/local/apache/passwd/groups"
+Require group GroupName
